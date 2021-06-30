@@ -1,0 +1,31 @@
+<div class="container" [ngClass]="{'dark': darkMode}">
+  <div class="row justify-content-center">
+
+    <div class="col-12 col-lg-5 head cuerpo-centrado">
+
+      <img src="{{darkMode? user.imageDarkMode : user.image}}" class="imagen" alt="Foto miniBio"/>
+      <h2>{{user.username}}</h2>
+      <p>{{user.description}}</p>
+
+
+      <a *ngFor="let item of user.links" href="{{item.link}}" class="link-item d-flex align-items-center" target="_blank">
+        <div class="item-left">
+          <fa-icon [icon]="item.icon"></fa-icon>
+        </div>
+        <div class="item-right">
+          <p>{{item.title}}</p>
+        </div>
+      
+      </a>
+    
+
+  </div>
+
+  <button class="button-mode col-offset-11 col-1" type="button" (click)="changeMode()">
+    <fa-icon *ngIf="darkMode" [icon]="faMoon"></fa-icon>
+    <fa-icon *ngIf="!darkMode" [icon]="faSun"></fa-icon>
+  </button>
+
+</div>
+
+
