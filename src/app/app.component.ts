@@ -36,13 +36,13 @@ export class AppComponent {
       },
 
       {
-        link: "https://github.com/zmiaw",
+        link: "https://www.instagram.com",
         title: "Instagram",
         icon: faInstagram
       },
 
       {
-        link: "https://www.linkedin.com/in/noelia-garc%C3%ADa-fern%C3%A1ndez-504a50173",
+        link: "https://www.linkedin.com/in/ysolosequesellamanoelia/",
         title: "Mi Linkedin",
         icon: faLinkedin
       }
